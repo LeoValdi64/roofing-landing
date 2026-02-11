@@ -348,7 +348,7 @@ function Services() {
               <h3 className="text-xl font-bold text-white mb-3">
                 {service.title}
               </h3>
-              <p className="text-gray-400 leading-relaxed text-sm">
+              <p className="text-gray-400 leading-relaxed text-sm sm:text-base">
                 {service.desc}
               </p>
               <div className="mt-6">
@@ -415,10 +415,10 @@ function Gallery() {
             >
               {/* Before */}
               <div className="relative">
-                <div className="h-48 bg-gradient-to-br from-gray-800 to-gray-700 flex items-center justify-center p-6">
+                <div className="h-56 sm:h-48 bg-gradient-to-br from-gray-800 to-gray-700 flex items-center justify-center p-6">
                   <div className="text-center">
                     <Wrench className="w-10 h-10 text-gray-500 mx-auto mb-3" />
-                    <p className="text-gray-400 text-sm leading-relaxed">
+                    <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
                       {project.before}
                     </p>
                   </div>
@@ -437,10 +437,10 @@ function Gallery() {
 
               {/* After */}
               <div className="relative">
-                <div className="h-48 bg-gradient-to-br from-gray-700 to-gray-600 flex items-center justify-center p-6">
+                <div className="h-56 sm:h-48 bg-gradient-to-br from-gray-700 to-gray-600 flex items-center justify-center p-6">
                   <div className="text-center">
                     <BadgeCheck className="w-10 h-10 text-amber-500 mx-auto mb-3" />
-                    <p className="text-gray-300 text-sm leading-relaxed">
+                    <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
                       {project.after}
                     </p>
                   </div>
@@ -696,7 +696,7 @@ function InspectionCTA() {
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="bg-gradient-to-b from-gray-900 to-gray-950 border border-gray-800 rounded-3xl p-12 sm:p-16 relative overflow-hidden">
+        <div className="bg-gradient-to-b from-gray-900 to-gray-950 border border-gray-800 rounded-3xl p-6 sm:p-12 lg:p-16 relative overflow-hidden">
           <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent" />
 
           <div className="w-20 h-20 bg-amber-500/10 rounded-2xl flex items-center justify-center mx-auto mb-8">
